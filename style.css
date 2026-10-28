@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 0 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo span {
+    color: #7B8895;
+}
+
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8C959F;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #121212;
+}
+
+.talk-btn {
+    border: 2px solid #121212;
+    background: transparent;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.talk-btn:hover {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.hero-content {
+    max-width: 540px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #121212;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #7B8895;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.get-started-btn {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #343a40;
+}
+
+.hero-image img {
+    max-width: 580px;
+    height: auto;
+}
+
+.skills-section {
+    margin-bottom: 120px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #121212;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: #F8F9FA;
+    border-radius: 16px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #121212;
+}
+
+.skill-card p {
+    font-size: 15px;
+    color: #7B8895;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.secondary-text {
+    font-size: 14px;
+    color: #9AA0A6;
+    margin-bottom: 15px;
+}
+
+.learn-btn {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: max-content;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.learn-btn:hover {
+    background-color: #343a40;
+}
+
+.skill-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.speaking-card {
+    flex: 1;
+}
+
+.speaking-card .skill-img {
+    margin-bottom: 30px;
+}
+
+.speaking-card .learn-btn {
+    margin-bottom: 0;
+}
+
+.right-skills-group {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-row-skills {
+    display: flex;
+    gap: 30px;
+}
+
+.small-card {
+    flex: 1;
+    padding: 35px;
+}
+
+.small-card h3 {
+    font-size: 24px;
+}
+
+.small-card .skill-img {
+    margin-bottom: 25px;
+}
+
+.small-card .learn-btn {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.listening-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 45px;
+}
+
+.listening-card .skill-content {
+    flex: 1;
+}
+
+.listening-card .learn-btn {
+    margin-bottom: 0;
+}
+
+.listening-card .skill-img {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.about-section {
+    margin-bottom: 120px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #121212;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #7B8895;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 70px;
+}
+
+.stat-box h3 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #7B8895;
+    margin-bottom: 0;
+}
+
+/* 5. Pricing Section */
+.pricing-section {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pricing-card {
+    background-color: #F8F9FA;
+    border-radius: 16px;
+    padding: 45px 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.pricing-img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-img img {
+    max-width: 100%;
+    height: 190px;
+    object-fit: contain;
+}
+
+.pricing-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 15px;
+}
+
+.pricing-content p {
+    font-size: 15px;
+    color: #7B8895;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.price-tag {
+    background-color: #E9ECEF;
+    color: #212529;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 10px;
+    display: inline-block;
+    width: max-content;
+}
+
+.price-tag span {
+    font-size: 13px;
+    color: #7B8895;
+    font-weight: normal;
+    margin-left: 6px;
+}
+
+.contact-section {
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.contact-img {
+    flex: 1;
+}
+
+.contact-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-content {
+    flex: 1;
+}
+
+.contact-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #121212;
+}
+
+.contact-content p {
+    font-size: 16px;
+    color: #7B8895;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 15px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 16px 20px;
+    border: 1px solid #CED4DA;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.subscribe-box input:focus {
+    border-color: #212529;
+}
+
+.subscribe-btn {
+    background-color: #212529;
+    color: #ffffff;
+    border: none;
+    padding: 16px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #343a40;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #DEE2E6;
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #121212;
+}
+
+.footer-logo span {
+    color: #7B8895;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #7B8895;
+    font-size: 14px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #121212;
+}
+
+
+
+/* Mobil və Tablet Ekranlar üçün Responsivlik (Max-width: 992px) */
+@media screen and (max-width: 992px) {
+
+    /* Ümumi səhifə kənar boşluqlarını azaldırıq */
+    body {
+        padding: 0 20px;
+    }
+
+    /* 1. Header menyunu gizlədib hamburger düyməsi üçün yer açırıq */
+    .header {
+        padding: 20px 0;
+    }
+
+    .nav-links,
+    .talk-btn {
+        display: none; /* Sadəlik üçün mobil menyunu gizlədirik, istəsəniz JS ilə aktivləşdirə bilərsiniz */
+    }
+
+    /* 2. Hero Section - Şəkil yuxarıda, mətn aşağıda düşür */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        gap: 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .get-started-btn {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* 3. Skills Section - Bütün kartlar alt-alta düzülür */
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-skills-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .top-row-skills {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 30px 20px;
+    }
+
+    /* Listening kartı mobil versiyada alt-alta düşür */
+    .listening-card {
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    /* 4. About Us Section - Şəkil yuxarıda, mətn aşağıda */
+    .about-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .stats-grid {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /* 5. Pricing Section - Kartlar alt-alta düzülür */
+    .pricing-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    /* 6. Contact & Footer Section */
+    .contact-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contact-content h2 {
+        font-size: 36px;
+    }
+
+    .subscribe-box {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
